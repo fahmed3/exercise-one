@@ -2,20 +2,19 @@ import React from "react";
 
 import "./App.css";
 
+import ArticleListing from "./containers/ArticleListing";
+
 function App() {
-  const exerciseNumber = `One`;
-  const exerciseName = `Exercise`;
   return (
     <div className="App">
-      {
-        //brackets are for javascipt code
-      }
-      <h1> {`${exerciseName} ${exerciseNumber}`}</h1>
+      <ArticleListing></ArticleListing>
     </div>
   );
 }
 
-/*
+export default App;
+
+/* Notes
 undefined - this value is not defined, therefore we cannot use it - creates an error
 null - this value is equal to 'null' - does not create an error
 // about null... if you're using it in an if statement, it will act as false
@@ -23,9 +22,16 @@ NaN - You're trying to use a value as a number but it's not a number
 -a kind of error technically
 */
 
-export default App;
+/* Code Notes
 
-/* Notes
+    <div className="App">
+      {
+        //brackets are for javascipt code
+      }
+      <h1> {`${exerciseName} ${exerciseNumber}`}</h1>
+    </div>
+
+
 //Arrays
 const coolArray = ["cool", "array"];
 let coolArray = ["cooler", "array"];
