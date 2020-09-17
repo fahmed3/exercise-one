@@ -1,13 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
 import ArticleListing from "./containers/ArticleListing";
+import Article from "./containers/Article";
 
 function App() {
   return (
     <div className="App">
-      <ArticleListing></ArticleListing>
+      <Router>
+        <Switch>
+          <Route path="/article/:id">
+            <Article />
+          </Route>
+          <Route path="/">
+            <ArticleListing />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
@@ -76,4 +87,40 @@ const coolArray = [
 const newDate = Date().now; // 3:31 September 10, 2020
 const coolMinutes = newDate.getMinute(); //31
 const coolMinutes = newDate.getHours(); // 3
+*/
+
+/* 9/15/20
+
+whatever.map((element, i) => (
+  console.log(element);
+));
+
+^ is the same as:
+
+for (let i = 0; i < whatev.length; i++) {
+  console.log(whatever[i]);
+}
+
+
+switch(path) {
+  case '/article':
+    return <Article />;
+  case '/':
+    return <ArticleListing />:
+  default:
+    return null;
+}
+
+
+function CoolFunction() {
+  const text = 'words';
+  return AnotherFunction(text);
+}
+function AnotherFunction(argument){
+  console.log(argument) //string words
+  console.log(text) //undefined
+  return argument;
+}
+
+
 */

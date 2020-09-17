@@ -1,2 +1,52 @@
 .App {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 25px;
 }
+
+.App h1 {
+  font-size: 70px;
+}
+
+.ArticleCard {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 25px 30px;
+  margin: 30px 0;
+}
+
+.ArticleCardImage {
+  flex-basis: 30%;
+  padding-right: 30px;
+}
+
+.ArticleCardImage img {
+  height: auto;
+  width: 100%;
+}
+
+.ArticleCardText {
+  flex-basis: 70%;
+}
+
+/*
+Classes: .class
+IDs: #id //NEVER USE THESE IN CSS DON'T DO IT
+HTML Element: h1, h2, p, main...
+
+Display Values:
+block // <div>
+inline // <a>
+inline-block
+none
+
+flex
+grid
+
+CSS box model
+padding - inside of the container - top, right, bottom, left; 
+margin - outside of the container
+border - lines up with the container
+
+*/
