@@ -1,15 +1,15 @@
-.App {
+.App h1 {
+  font-size: 70px;
+}
+
+.ArticleListing {
   margin: 0 auto;
   max-width: 1080px;
   padding: 0 25px;
 }
 
-.App h1 {
-  font-size: 70px;
-}
-
 .ArticleCard {
-  border: solid black;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
   padding: 25px 30px;
@@ -28,6 +28,37 @@
 
 .ArticleCardText {
   flex-basis: 70%;
+}
+
+.Article {
+}
+
+.ArticleHeaderWrapper {
+  background-color: #e5e5e5;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-bottom: 45px;
+  padding-top: 65px;
+}
+
+.ArticleHeader {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.ArticleHeader h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.ArticleHeaderBlurb {
+  font-size: 20px;
+}
+
+.ArticleBody {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 /*
